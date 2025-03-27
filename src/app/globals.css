@@ -1,7 +1,7 @@
 body {
   background: linear-gradient(294deg, #c8dce5 0%, #b6ccda 100%);
   main {
-    padding-inline: max(20px, 50% - 80rem / 2);
+    padding-inline: max(20px, 50% - 70rem / 2);
   }
 }
 
@@ -10,7 +10,6 @@ h2,
 h3,
 p,
 a {
-  font-family: Poppins;
   color: #fff;
 }
 
@@ -22,7 +21,7 @@ h2 {
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 800;
 }
 h2 {
   font-weight: 200;
@@ -70,13 +69,9 @@ section {
   .displayWatches {
     display: flex;
     justify-content: center;
+    gap: 10px;
     img {
-      /* position: relative;
-      left: -5px; */
       width: 15%;
-      &:first-child {
-        background-color: rgba(67, 69, 88, 0.6);
-      }
     }
   }
 }
