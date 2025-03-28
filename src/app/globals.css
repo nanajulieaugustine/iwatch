@@ -5,6 +5,10 @@ body {
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 h1,
 h2,
 h3,
@@ -66,12 +70,42 @@ section {
   article {
     padding-top: 10rem;
   }
+  .overviewWatch {
+    display: flex;
+    align-items: center;
+
+    .colorContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      cursor: pointer;
+      > div {
+        width: 15px;
+        height: 15px;
+        border-radius: 100%;
+        border: 2px solid #fff;
+      }
+      .black {
+        background-color: black;
+      }
+      .blue {
+        background-color: aquamarine;
+      }
+      .pink {
+        background-color: pink;
+      }
+      .active {
+        border: 4px solid #fff;
+      }
+    }
+  }
   .displayWatches {
     display: flex;
-    justify-content: center;
     gap: 10px;
+    justify-content: center;
     img {
-      width: 15%;
+      width: 30%;
+      height: 30%;
     }
   }
 }
