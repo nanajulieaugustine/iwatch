@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import Search from "./Searchbar";
 const Header = () => {
   return (
-    <header>
+    <header className="flex items-baseline justify-between gap-5">
       <Logo></Logo>
       <Nav></Nav>
       <Search></Search>

@@ -1,3 +1,4 @@
+@import "tailwindcss";
 body {
   background: linear-gradient(294deg, #c8dce5 0%, #b6ccda 100%);
   main {
@@ -30,82 +31,8 @@ h1 {
 h2 {
   font-weight: 200;
 }
-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  align-items: baseline;
 
-  div {
-    display: flex;
-    gap: 10px;
-
-    .icon {
-      color: #fff;
-    }
-    hr {
-      border: 0.5px solid #fff;
-      margin: 0;
-      height: 17px;
-    }
-  }
-
-  ul {
-    display: flex;
-    gap: 60px;
-    li {
-      list-style: none;
-
-      a {
-        color: #fff;
-        text-decoration: none;
-      }
-    }
-  }
-}
-section {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 5rem;
-  article {
-    padding-top: 10rem;
-  }
-  .overviewWatch {
-    display: flex;
-    align-items: center;
-
-    .colorContainer {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      cursor: pointer;
-      > div {
-        width: 15px;
-        height: 15px;
-        border-radius: 100%;
-        border: 2px solid #fff;
-      }
-      .black {
-        background-color: black;
-      }
-      .blue {
-        background-color: aquamarine;
-      }
-      .pink {
-        background-color: pink;
-      }
-      .active {
-        border: 4px solid #fff;
-      }
-    }
-  }
-  .displayWatches {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    img {
-      width: 30%;
-      height: 30%;
-    }
-  }
+a {
+  color: #fff;
+  text-decoration: none;
 }

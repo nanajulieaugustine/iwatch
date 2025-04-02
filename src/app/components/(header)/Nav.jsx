@@ -1,7 +1,7 @@
 "use strict";
 const nav = () => {
   return (
-    <ul>
+    <ul className="flex gap-10">
       <li>
         <a href="#0">Mac</a>
       </li>
