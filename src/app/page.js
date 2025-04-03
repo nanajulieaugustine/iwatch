@@ -1,13 +1,9 @@
 "use strict";
-import Header from "./components/(header)/Header";
-import Hero from "./components/(hero)/Hero";
+import Iwatch from "./components/Iwatch";
 export default function Home() {
   return (
     <div>
-      <Header></Header>
-      <main>
-        <Hero></Hero>
-      </main>
+      <Iwatch></Iwatch>
     </div>
   );
 }
