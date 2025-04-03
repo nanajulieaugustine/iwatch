@@ -1,4 +1,4 @@
-"use strict";
+"use client";
 import { CiSearch } from "react-icons/ci";
 import { FiShoppingBag } from "react-icons/fi";
 const Search = () => {

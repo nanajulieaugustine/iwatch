@@ -1,9 +1,9 @@
 "use strict";
-import Iwatch from "./components/Iwatch";
+import Header from "./components/(header)/Header";
 export default function Home() {
   return (
     <div>
-      <Iwatch></Iwatch>
+      <h1>forside</h1>
     </div>
   );
 }

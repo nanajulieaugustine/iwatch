@@ -1,24 +1,32 @@
-"use strict";
-const nav = () => {
+"use client";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+
+const Nav = () => {
+  const pathname = usePathname(); // Get current path
+
   return (
     <ul className="flex gap-10">
-      <li>
-        <a href="#0">Mac</a>
-      </li>
-      <li>
-        <a href="#0">iPhone</a>
-      </li>
-      <li>
-        <a href="#0">iPad</a>
-      </li>
-      <li>
-        <a href="#0">iWatch</a>
-      </li>
-      <li>
-        <a href="#0">Support</a>
-      </li>
+      {[
+        { href: "/page", label: "Home" },
+        { href: "/iphone", label: "iPhone" },
+        { href: "/ipad", label: "iPad" },
+        { href: "/iwatch", label: "iWatch" },
+        { href: "/support", label: "Support" },
+      ].map(({ href, label }) => (
+        <li key={href}>
+          <Link
+            href={href}
+            className={`px-8 py-1 rounded-4xl ${
+              pathname === href ? "text-[#c8dce5] bg-amber-50" : "text-amber-50"
+            }`}
+          >
+            {label}
+          </Link>
+        </li>
+      ))}
     </ul>
   );
 };
 
-export default nav;
+export default Nav;
