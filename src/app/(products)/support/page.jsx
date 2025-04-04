@@ -1,5 +1,11 @@
+import Products from "@/app/components/Products";
+
 const Support = () => {
-  return <h1>Support</h1>;
+  return (
+    <div>
+      <Products></Products>
+    </div>
+  );
 };
 
 export default Support;
